@@ -1,20 +1,12 @@
 # shopsmart-login
 #Abdullah
-shopsmart-login/
-│
-├── frontend/
-│   ├── index.html
-│   ├── style.css
-│   └── app.js
-│
-├── backend/
-│   ├── server.js
-│   ├── routes/
-│   │   └── auth.js
-│   └── utils/
-│       └── otp.js
-│
-└── README.md
+1- Features
+2- Screenshot
+3- Operating Instructions
+(Firebase -> ربط API باستخدام 
+google_sign_in,fierbase_auth
+)
+رعت 
 
 #Adham
 
