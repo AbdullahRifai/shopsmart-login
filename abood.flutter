@@ -1,21 +1,22 @@
 # main.dart
-import 'package:flutter/material.dart';
-import 'login_page.dart';
+import 'package:flutter/material.dart'; // استيراد مكتبة الواجهة
+import 'package:firebase_core/firebase_core.dart'; // تشغيل Firebase
+import 'login_page.dart'; // صفحة تسجيل الدخول
 
-void main() {
-  runApp(const MyApp());
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized(); // يجهز Flutter قبل async
+  await Firebase.initializeApp(); // تشغيل Firebase
+  runApp(const MyApp()); // تشغيل التطبيق
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  const MyApp({super.key}); // constructor
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Login App',
-      theme: ThemeData(primarySwatch: Colors.blue),
-      home: const LoginPage(),
+    return const MaterialApp(
+      debugShowCheckedModeBanner: false, // إزالة شعار debug
+      home: LoginPage(), // الصفحة الرئيسية
     );
   }
 }
