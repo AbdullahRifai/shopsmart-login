@@ -1,0 +1,32 @@
+#SCRUM-5
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+</head>
+<body>
+
+<h2>Login</h2>
+
+<input type="email" placeholder="Email" id="email"><br><br>
+<input type="password" placeholder="Password" id="password"><br><br>
+
+<button onclick="login()">Login</button>
+
+<p id="message"></p>
+
+<script>
+function login() {
+  let email = document.getElementById("email").value;
+  let password = document.getElementById("password").value;
+
+  if(email && password) {
+    document.getElementById("message").innerText = "Login successful";
+  } else {
+    document.getElementById("message").innerText = "Please fill all fields";
+  }
+}
+</script>
+
+</body>
+</html>
