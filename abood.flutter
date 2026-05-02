@@ -1,12 +1,12 @@
 # main.dart
-import 'package:flutter/material.dart'; // استيراد مكتبة الواجهة
-import 'package:firebase_core/firebase_core.dart'; // تشغيل Firebase
-import 'login_page.dart'; // صفحة تسجيل الدخول
+import 'package:flutter/material.dart'; 
+import 'package:firebase_core/firebase_core.dart'; 
+import 'login_page.dart';
 
 void main() async {
-  WidgetsFlutterBinding.ensureInitialized(); // يجهز Flutter قبل async
-  await Firebase.initializeApp(); // تشغيل Firebase
-  runApp(const MyApp()); // تشغيل التطبيق
+  WidgetsFlutterBinding.ensureInitialized(); 
+  await Firebase.initializeApp(); 
+  runApp(const MyApp()); 
 }
 
 class MyApp extends StatelessWidget {
